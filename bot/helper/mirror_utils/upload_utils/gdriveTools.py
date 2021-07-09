@@ -535,7 +535,7 @@ class GoogleDriveHelper:
                     content += f'<b> | <a href="https://telegra.ph/{self.path[nxt_page]}">Next</a></b>'
                     nxt_page += 1
             Telegraph(access_token=telegraph_token).edit_page(path = self.path[prev_page],
-                                 title = 'Sagiri TorrentGD Search',
+                                 title = 'UserLazy Mirror Search',
                                  author_name='Ihsan',
                                  author_url='https://github.com/userlazy/botgabut',
                                  html_content=content)
@@ -620,7 +620,7 @@ class GoogleDriveHelper:
 
             for content in self.telegraph_content :
                 self.path.append(Telegraph(access_token=telegraph_token).create_page(
-                                                        title = 'Sagiri TorrentGD Search',
+                                                        title = 'UserLazy Mirror Search',
                                                         author_name='Ihsan',
                                                         author_url='https://github.com/userlazy/botgabut',
                                                         html_content=content
