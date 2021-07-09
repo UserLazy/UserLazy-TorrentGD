@@ -54,9 +54,10 @@ This bot can mirror all your links to Google Drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Bio", "https://userlazy.github.io/UserLazy")
-    buttons.buildbutton("Join Group", "https://t.me/Grup_Anime_Chat")
-    reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
+    buttons.buildbutton("Update Channel", "t.me/UserLazyXBot")
+    buttons.buildbutton("Support Chat", "t.me/UserLazySupport")
+    buttons.buildbutton("UserLazy Mirror"), "t.me/UserLazyMirror"
+    reply_markup = InlineKeyboardMarkup(buttons.build_menu(3))
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id, update.message.chat.username, update.message.text))
     uptime = get_readable_time((time.time() - botStartTime))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
