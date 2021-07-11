@@ -27,3 +27,10 @@ telegraph
 tenacity
 TgCrypto
 youtube_dl
+oauth2client
+google-api-python-client
+progress
+progressbar2
+httplib2shim
+google_auth_oauthlib
+pyrogram
